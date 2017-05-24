@@ -1,5 +1,5 @@
 site_name: Terraform for さくらのクラウド
-site_url: https://yamamoto-febc.github.io/terraform-provider-sakuracloud/
+site_url: https://yamamoto-febc.github.io/terraform-provider-sakuracloud
 site_description: Terrform for さくらのクラウド
 site_author: '@yamamoto-febc'
 repo_url: https://github.com/yamamoto-febc/terraform-provider-sakuracloud
@@ -7,6 +7,7 @@ repo_name: terraform-provider-sakuracloud
 copyright: Copyright (C) 2017 Kazumichi Yamamoto.
 google_analytics: ['UA-63739336-5','auto']
 theme: readthedocs
+theme_dir: theme_for_redirect
 extra_css:
   - css/extra.css
 pages:

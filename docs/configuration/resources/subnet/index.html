@@ -3,31 +3,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>サブネット - Terraform for さくらのクラウド</title>
-  
-
+  <meta name="author" content="@yamamoto-febc">
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-
-  
+  <title>サブネット - Terraform for さくらのクラウド</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../../../css/highlight.css">
   <link href="../../../css/extra.css" rel="stylesheet">
-
   
   <script>
     // Current page data
-    var mkdocs_page_name = "サブネット";
+    var mkdocs_page_name = "\u30b5\u30d6\u30cd\u30c3\u30c8";
+    var mkdocs_page_input_path = "configuration/resources/subnet.md";
+    var mkdocs_page_url = "/configuration/resources/subnet/";
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js"></script>
   <script src="../../../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../../../js/highlight.pack.js"></script>
-  <script src="../../../js/theme.js"></script> 
+<meta http-equiv="refresh" content="0; URL=https://sacloud.github.io/terraform-provider-sakuracloud/configuration/resources/subnet/">
 
   
   <script>
@@ -58,214 +57,145 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
+	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../..">ホーム</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">ホーム</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">ドキュメント</span>
     <ul class="subnav">
-    <li><span>ドキュメント</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../../installation/">インストールガイド</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../../articles/">ブログ/記事/読み物</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../../installation/">インストールガイド</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../articles/">ブログ/記事/読み物</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">設定リファレンス</span>
     <ul class="subnav">
-    <li><span>設定リファレンス</span></li>
-
-        
-            
+                <li class="">
+                    
+    <span class="caption-text">全体/共通項目</span>
     <ul class="subnav">
-    <li><span>全体/共通項目</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../provider/">プロバイダ</a>
-        
-    </li>
-
-        
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../provider/">プロバイダ</a>
+                </li>
     </ul>
-
-        
-            
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">リソース</span>
     <ul class="subnav">
-    <li><span>リソース</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../server/">サーバ</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../disk/">ディスク</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../switch/">スイッチ</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../internet/">ルータ</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">サブネット</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#sakuracloud_subnet">サブネット(sakuracloud_subnet)</a></li>
-                
-                    <li><a class="toctree-l4" href="#_1">設定例</a></li>
-                
-                    <li><a class="toctree-l4" href="#_2">パラメーター</a></li>
-                
-                    <li><a class="toctree-l4" href="#_3">属性</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../packet_filter/">パケットフィルタ</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../bridge/">ブリッジ</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../load_balancer/">ロードバランサ</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../vpc_router/">VPCルータ</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../database/">データベース</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../note/">スタートアップスクリプト</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../ssh_key/">公開鍵</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../ssh_key_gen/">公開鍵(生成)</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../dns/">DNS</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../gslb/">GSLB</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../simple_monitor/">シンプル監視</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../auto_backup/">自動バックアップ</a>
-        
-    </li>
-
-        
-    </ul>
-
-        
-            
+                <li class="toctree-l3">
+                    
+    <a class="" href="../server/">サーバ</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../disk/">ディスク</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../switch/">スイッチ</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../internet/">ルータ</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">サブネット</a>
     <ul class="subnav">
-    <li><span>データソース</span></li>
-
-        
             
-    <li class="toctree-l1 ">
-        <a class="" href="../data_resource/">データソース</a>
+    <li class="toctree-l4"><a href="#sakuracloud_subnet">サブネット(sakuracloud_subnet)</a></li>
+    
+        <ul>
         
-    </li>
+            <li><a class="toctree-l5" href="#_1">設定例</a></li>
+        
+            <li><a class="toctree-l5" href="#_2">パラメーター</a></li>
+        
+            <li><a class="toctree-l5" href="#_3">属性</a></li>
+        
+        </ul>
+    
 
-        
     </ul>
-
-        
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../packet_filter/">パケットフィルタ</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../bridge/">ブリッジ</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../load_balancer/">ロードバランサ</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../vpc_router/">VPCルータ</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../database/">データベース</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../note/">スタートアップスクリプト</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../ssh_key/">公開鍵</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../ssh_key_gen/">公開鍵(生成)</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../dns/">DNS</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../gslb/">GSLB</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../simple_monitor/">シンプル監視</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../auto_backup/">自動バックアップ</a>
+                </li>
     </ul>
-<li>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">データソース</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../data_resource/">データソース</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -289,6 +219,10 @@
     
       
         
+          <li>設定リファレンス &raquo;</li>
+        
+      
+        
           <li>リソース &raquo;</li>
         
       
@@ -296,7 +230,7 @@
     <li>サブネット</li>
     <li class="wy-breadcrumbs-aside">
       
-        
+        <a href="https://github.com/yamamoto-febc/terraform-provider-sakuracloud/"> Edit on terraform-provider-sakuracloud</a>
       
     </li>
   </ul>
@@ -439,7 +373,7 @@ resource &quot;sakuracloud_subnet&quot; &quot;foobar&quot; {
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../packet_filter/" class="btn btn-neutral float-right" title="パケットフィルタ"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../packet_filter/" class="btn btn-neutral float-right" title="パケットフィルタ">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../internet/" class="btn btn-neutral" title="ルータ"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -463,10 +397,10 @@ resource &quot;sakuracloud_subnet&quot; &quot;foobar&quot; {
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -477,6 +411,7 @@ resource &quot;sakuracloud_subnet&quot; &quot;foobar&quot; {
       
     </span>
 </div>
+    <script src="../../../js/theme.js"></script>
 
 </body>
 </html>
